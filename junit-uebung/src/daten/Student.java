@@ -33,10 +33,19 @@ public class Student extends Person implements Comparable<Student> {
 		}
 		return result;
 	}
+	
+	public boolean getSelfEntitled(){
+        return this.selfEntitled;
+	}
 
 	@Override
 	public String toString() {
 		// TODO missing implementation
 		return super.toString();
+	}
+
+	public void setBirthDate(Date date) {
+		// TODO Auto-generated method stub
+		birthDate = date;
 	}
 }
